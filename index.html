@@ -15,9 +15,29 @@
     </div>
     <!-- in the future, consider adding  a form that asks for the user's zip code. button type will then have to be "submit" instead of "button" -->
     <div id="click-me">
-      <button type="button" name="button">But What's the Weather?</button>
-    </div>
-  <!-- <footer>Make sure to reference Dark Sky somewhere is code!</footer> -->
+      <form method="get"
+        <fieldset>
+          <!-- <ul>
+              <li>
+                  <label for="latitude">Latitude</label>
+                  <input type="text" id="latitude" placeholder="e.g. 122.3321" required>
+              </li>
+
+              <li>
+                  <label for="longitude">Longitude</label>
+                  <input type="text" id="longitude" placeholder="e.g. 47.6062" required>
+              </li> -->
+              <li>
+                <label for="zip-code">Zip code</label>
+                <input type="number" id="zip-code" placeholder="98104" value="">
+              </li>
+          </ul>
+        </fieldset>
+        <button>But What's the Weather?</button>
+      </form>
+  </div>
+  <!-- <footer>Make sure to reference Dark Sky somewhere in code!</footer> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" charset="utf-8"></script>
   <script src="app.js" type="text/javascript"></script>
   </body>
 </html>
