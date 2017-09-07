@@ -1,0 +1,12 @@
+button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  position: absolute;
+  height: 20px;
+  margin: auto;
+  padding: 10em 15em;
+  background: #4479BA;
+  color: FFF;
+}
