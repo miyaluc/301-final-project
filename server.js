@@ -7,3 +7,6 @@
 // const express =
 
 //need to figure out if server.js is required given the scope of this project
+
+// app.listen
+// public folder static
