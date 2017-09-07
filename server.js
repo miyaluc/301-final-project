@@ -1,12 +1,7 @@
 'use strict';
 
-// express
-// bodyparser
-// set port
-//
-// const express =
+const express = require('express');
+const app = express();
+app.use(express.static('./public'));
 
-//need to figure out if server.js is required given the scope of this project
-
-// app.listen
-// public folder static
+app.listen(3000);
