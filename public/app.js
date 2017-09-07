@@ -2,6 +2,8 @@
 
 // make click function and put API request inside of it - function that runs when hitting the button that makes request for me
 
+$('.weather-results').hide();
+
 $('#click-me').on('click', function(e) {
   let latlong = $(`select[name=cities]`).val();
   console.log(latlong);
@@ -20,10 +22,10 @@ $('#click-me').on('click', function(e) {
           console.log( response ); // server response
           $('#summary').text(`Summary: ${response.daily.summary}`);
           $('#weather-icon').text(`Weather Symbol:: ${response.currently.icon}`);
-          $('#precip-chance').text(`Chance of Precipitation: ${response.daily.data.precipProbability}`);
-          $('#precip-type').text(`Type of Precipitation: ${response.daily.data.precipType}`);
-          $('#high').text(`High: ${response.daily.data.apparentTemperatureHigh}`);
+          $('#precip-chance').text(`Chance of Precipitation: ${response.currently.precipProbability}`);
+          $('#precip-type').text(`Type of Precipitation: ${response.currently.precipType}`);
           //create rawIndex template of what I want everything to look like
+          $('.weather-results').show();
       }
   });
 });
