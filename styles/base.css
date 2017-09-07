@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+  background-image: url('styles\images\textured background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+div {
+  max-width: 100%;
+}
