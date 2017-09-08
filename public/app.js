@@ -23,15 +23,7 @@ $('#click-me').on('click', function(e) {
           $('#summary').text(`Summary: ${response.daily.summary}`);
           $('#weather-icon').text(`Weather Symbol:: ${response.currently.icon}`);
           $('#precip-chance').text(`Chance of Precipitation: ${response.currently.precipProbability}`);
-          $('#precip-type').text(`Type of Precipitation: ${response.currently.precipType}`);
-          //create rawIndex template of what I want everything to look like
           $('.weather-results').show();
       }
   });
 });
-
-// Summary: response.daily.summary
-// Weather Symbol: response.currently.icon
-// Chance of Precipitation: response.daily.data.precipProbability
-// Type of Precipitation: response.daily.data.precipType
-// High: response.daily.data.apparentTemperatureHigh
