@@ -1,9 +1,9 @@
-button {
+#click-me {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   border: solid 1px #20538D;
-  position: absolute;
+  position: relative;
   height: 20px;
   margin: auto;
   padding: 10em 15em;
