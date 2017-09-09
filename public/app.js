@@ -32,11 +32,10 @@ $('#click-me').on('click', function(e) {
           if (response.currently.icon === 'snow') {
             $('weather-gif3').show();}
 
-          if (response.currently.icon === 'partly-cloudy-night'){$('.weather-gif2').show();}
+          if (response.currently.icon === 'rain'){$('.weather-gif2').show();}
 
-          if (response.currently.icon === 'clear-day') {$('.weather-gif1').show();}
+          if (response.currently.icon === 'partly-cloudy-night' || response.currently.icon === 'clear-day') {$('.weather-gif1').show();
+          console.log('Play ball!'); }
     }
   });
 });
-
-// console.log('Play ball!');
