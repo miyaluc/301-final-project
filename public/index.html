@@ -13,8 +13,10 @@
     <div id="" class="my-header">
 
     </div>
-    <button id="click-me">But What's the Weather?</button>
-    <div id="">
+    <div class="outer">
+          <button id="click-me" class="inner">But What's the Weather?</button>
+    </div>
+    <div id="cities">
       <form method="get"
         <fieldset>
               <select name="cities">
@@ -41,6 +43,10 @@
       </ul>
     </section>
   </div>
+  <div class="weather-gif1"><img src="styles/images/radiant sun.gif" id="sunny"></div>
+  <div class="weather-gif2"><img src="styles/images/dark n stormy.gif" id="rainy"></div>
+  <div class="weather-gif3"><img src="styles/images/snow-falling-iced-up-car.gif" id="snowfall"></div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.js" charset="utf-8"></script>
   <script src="app.js" type="text/javascript"></script>
   <script src="..\server.js"type="text/javascript">

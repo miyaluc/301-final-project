@@ -3,6 +3,10 @@
 // make click function and put API request inside of it - function that runs when hitting the button that makes request for me
 
 $('.weather-results').hide();
+$('.weather-gif1').hide();
+$('.weather-gif2').hide();
+$('.weather-gif3').hide();
+//stretch goal: create if statement that displays weather gifs depending on weather icon info provided by API
 
 $('#click-me').on('click', function(e) {
   let latlong = $(`select[name=cities]`).val();
@@ -24,6 +28,14 @@ $('#click-me').on('click', function(e) {
           $('#weather-icon').text(`Weather Symbol:: ${response.currently.icon}`);
           $('#precip-chance').text(`Chance of Precipitation: ${response.currently.precipProbability}`);
           $('.weather-results').show();
-      }
+          if ($('#weather-icon' == 'clear-day' || 'clear-night')) {
+            $('.weather-gif1').show();
+            console.log('Play ball!');
+          } else if ($('#weather-icon' == 'rain' || 'thunderstorm')) {
+            $('.weather-gif2').show();
+          } else if ($('#weather-icon' == 'snow')) {
+            $('weather-gif3').show();
+          }
+    }
   });
 });
