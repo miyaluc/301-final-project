@@ -25,17 +25,17 @@ $('#click-me').on('click', function(e) {
       success: function( response ) {
           console.log( response ); // server response
           $('#summary').text(`Summary: ${response.daily.summary}`);
-          $('#weather-icon').text(`Weather Symbol:: ${response.currently.icon}`);
+          $('#weather-icon').text(`Weather Symbol: ${response.currently.icon}`);
           $('#precip-chance').text(`Chance of Precipitation: ${response.currently.precipProbability}`);
           $('.weather-results').show();
-          if ($('#weather-icon' == 'clear-day' || 'clear-night')) {
-            $('.weather-gif1').show();
-            console.log('Play ball!');
-          } else if ($('#weather-icon' == 'rain' || 'thunderstorm')) {
-            $('.weather-gif2').show();
-          } else if ($('#weather-icon' == 'snow')) {
-            $('weather-gif3').show();
-          }
+
+          if (response.currently.icon === 'snow') {
+            $('weather-gif3').show();}
+
+          if (response.currently.icon === 'rain'){$('.weather-gif2').show();}
+
+          if (response.currently.icon === 'partly-cloudy-night' || response.currently.icon === 'clear-day') {$('.weather-gif1').show();
+          console.log('Play ball!'); }
     }
   });
 });
