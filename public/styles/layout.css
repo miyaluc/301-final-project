@@ -45,3 +45,17 @@ html, body {
 .weather-results {
   margin-left: 11em;
 }
+
+.weather-gif1, .weather-gif2, .weather-gif3 {
+  display: inline-block;
+  padding-top: 3em;
+  width: 20em ;
+}
+
+.weather-gif1 {
+  margin-left: 10em;
+}
+
+.weather-gif2 {
+  margin-left: 3em;
+}

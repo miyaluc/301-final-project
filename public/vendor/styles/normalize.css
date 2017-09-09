@@ -15,7 +15,7 @@ html {
 /**
  * Remove default margin.
  */
-
+img
 body {
   margin: 0;
 }
@@ -183,6 +183,7 @@ sub {
 
 img {
   border: 0;
+  height: 15em;
 }
 
 /**
